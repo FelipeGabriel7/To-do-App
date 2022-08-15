@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul , li{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+.tarefa-Completa{
+    text-decoration: line-through;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+.container-init{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(107, 21, 107);
+    color: #fff;
+    justify-content: center;
+    box-shadow: 0.2rem 0.2rem 0.5rem #444;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    cursor: pointer;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.lista-tarefa{
+    margin-top: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.add-tarefas input{
+    background: #444;
+    color: #fff;
+}
+
+.add-tarefas input , i{
+    padding: 0.6rem;
+}
+
+.add-tarefas i{
+    position: absolute;
+    background: rgb(107, 21, 107);
+    color: #fff;
+    padding: 0.68rem;
+}
+
+.tarefas{
+    display: flex;
+    border-radius: 0.4rem;
+    color: #444;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 3rem;
+    font-weight: bold;
+}
+
+.tarefas li{
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+    border-bottom: 0.1rem solid rgba(68, 68, 68, 0.486);
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tarefas button{
+    padding: 0.3rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    background:rgb(107, 21, 107);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tarefas button:hover{
+    transition: 0.6s;
+    font-weight: bold;
+    color:rgb(107, 21, 107);
+    background: #fff;
+}
+
+.total-tarefas{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.fim-componente{
+    padding: 2rem;
+    background: rgb(107, 21, 107);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20rem;
+}
+
+
+.erro{
+    display: flex;
+    margin: 0.6rem;
+    font-size: 0.8rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #f50c0c;
+}
+
+.erro-none{
+    display: none;
+}
+@media(max-width: 768px){
+    .container-init{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 425px){
+    .container-init{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+    .title{
+        gap: 6rem;
+        padding: 1rem;
+    }
+}
+
+.dark{
+    transition: 0.6s all linear;
+    background: rgb(112, 112, 112);
+    color: #fff;
+}
+
+.dark .container-init{
+    transition: 0.6s all linear;
+    background: #444;
+}
+
+.dark .add-tarefas input{
+    background: #fff;
+    color: #444;
+    padding: 0.63rem;
+}
+.dark .tarefas li{
+    color: #fff;
+}
+
+.dark .tarefas{
+    transition: 0.8s all linear;
+    background: #444;
+}
+
+.dark .fim-componente{
+    background: #444;
+}
+
+.transition{
+    transition: 0.6s all linear;
+}
